@@ -1,0 +1,159 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        height: 700px;
+        background-image: url(img/header_star_mob.png), url(img/Star_2.png), url(img/Star_3.png), url(img/Star_4.png), url(img/Star_5.png);
+        background-repeat: no-repeat;
+        background-size: auto, 35px, 21px, 39px, 18px;
+        background-position: top right, 11% 15%, 25% 10%, 90% 88%, 76% 82%;
+
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            padding-top: 147px;
+            padding-bottom: 24px;
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__desc {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__mob {
+            display: block;
+            width: 296px;
+
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            text-align: center;
+
+            &_big {
+                font-weight: 600;
+            }
+        }
+
+        &__but {
+            padding-top: 36px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__button {
+            background: #202027;
+            box-sizing: border-box;
+            border-radius: 60px;
+            width: 285px;
+            height: 55px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: "Montserrat";
+
+            &:hover {
+                background: #FFFFFF;
+                color: #202027;
+            }
+        }
+    }
+
+    .box {
+        display: none;
+    }
+
+    .holder {
+        padding-bottom: 48px;
+        background-image: none;
+
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        &__content {
+            border-radius: 30px;
+            width: 343px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+
+            &_back {
+                border-radius: 30px;
+                width: 343px;
+                margin-bottom: 24px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            &_box {
+                margin-bottom: 32px;
+            }
+
+
+            &_img {
+                width: 343px;
+                height: 285px;
+            }
+
+            &_name {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                padding-top: 29px;
+                padding-left: 29px;
+                padding-right: 29px;
+                width: 285px;
+            }
+
+            &_text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                padding-top: 16px;
+                padding-left: 29px;
+                padding-right: 64px;
+                padding-bottom: 32px;
+            }
+        }
+
+
+        &__button {
+            border-radius: 60px;
+            width: 285px;
+            height: 55px;
+            margin-left: 29px;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: "Montserrat";
+
+            &:hover {
+                background: #FFFFFF;
+                color: #202027;
+            }
+        }
+    }
+
+    .footer {
+        height: 100px;
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 40px;
+        }
+    }
+}

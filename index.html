@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework1</title>
+</head>
+
+<body>
+    <header class="header center">
+        <h1 class="header__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
+
+        <h2 class="header__text">Тебе предстоит пройти несколько увлекательных игр. </h2>
+        <h2 class="header__text">Если готов, нажимай <span class="header__text_big">«Поехали!»</span> и <span
+                class="header__text_big">приступай</span>.</h2>
+
+        <div class="header__desc">
+            <h2 class="header__mob">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
+                class="header__mob_big">«Поехали!»</span> и <span class="header__mob_big">приступай</span>.</h2>
+        </div>
+      
+        <div class="header__but">
+            <form action="#About_game">
+                <button class="header__button">Поехали!</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="box center">
+        <h2 class="box__title" id="About_game">Об играх</h2>
+        <p class="box__text">В моей коллекции представлено 6 игр на разные темы.</p>
+        <p class="box__text">Игры несложные — в них может поиграть каждый.</p>
+        <p class="box__text">Все игры доступны для пользования.</p>
+        <div class="box__game">
+            <div class="box__game_container">
+
+                <a href="#game_1" class="box__content">
+                    <img src="img/game_1.png" alt="Game" class="Box__content_img">
+                    <p class="box__content_name">Игра №1</p>
+                    <p class="box__content_text">Угадай число</p>
+                </a>
+
+                <a href="#game_5" class="box__content">
+                    <img src="img/game_4.png" alt="Game" class="Box__content_img">
+                    <p class="box__content_name">Игра №4</p>
+                    <p class="box__content_text">Камень, ножницы, бумага</p>
+                </a>
+            </div>
+
+            <div class="box__game_container">
+                <a href="#game_2" class="box__content">
+                    <img src="img/game_2.png" alt="Game" class="Box__content_img">
+                    <p class="box__content_name">Игра №2</p>
+                    <p class="box__content_text">Простая арифметика</p>
+                </a>
+
+                <a href="#game_4" class="box__content">
+                    <img src="img/game_5.png" alt="Game" class="Box__content_img">
+                    <p class="box__content_name">Игра №5</p>
+                    <p class="box__content_text">Простая викторина</p>
+                </a>
+            </div>
+
+            <div class="box__game_container">
+                <a href="#game_3" class="box__content">
+                    <img src="img/game_3.png" alt="Game" class="Box__content_img">
+                    <p class="box__content_name">Игра №3</p>
+                    <p class="box__content_text">Переверни тескт</p>
+                </a>
+
+                <a href="#game_6" class="box__content">
+                    <img src="img/game_6.png" alt="Game" class="Box__content_img">
+                    <p class="box__content_name">Игра №6</p>
+                    <p class="box__content_text">Генертор случайных цветов</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="holder center">
+        <h2 class="holder__title" id="About_game">Мини-игры</h2>
+        <div class="holder__box">
+
+            <div class="holder__content">
+                <img src="img/game_1_big.png" alt="Game" class="holder__content_img">
+                <div class="holder__content_box" id="game_1">
+                    <p class="holder__content_name">Угадай число</p>
+                    <p class="holder__content_text">Попробуй угадать случайное число от 1 до 100.</p>
+                    <form class="holder__btn">
+                        <button class="holder__button">Играть!</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="holder__content_back">
+                <img src="img/game_2_big.png" alt="Game" class="holder__content_img">
+                <div class="holder__content_box" id="game_2">
+                    <p class="holder__content_name">Простая арифметика</p>
+                    <p class="holder__content_text">Попробуй решить простые арифметические задачи.</p>
+                    <form>
+                        <button class="holder__button">Играть!</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="holder__content">
+                <img src="img/game_3_big.png" alt="Game" class="holder__content_img">
+                <div class="holder__content_box" id="game_3">
+                    <p class="holder__content_name">Переверни текст</p>
+                    <p class="holder__content_text">Попробуй ввести текст, который будет перевернут.</p>
+                    <form>
+                        <button class="holder__button">Играть!</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="holder__content_back">
+                <img src="img/game_4_big.png" alt="Game" class="holder__content_img">
+                <div class="holder__content_box" id="game_4">
+                    <p class="holder__content_name">Викторина</p>
+                    <p class="holder__content_text">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <form>
+                        <button class="holder__button">Играть!</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="holder__content">
+                <img src="img/game_5_big.png" alt="Game" class="holder__content_img">
+                <div class="holder__content_box" id="game_5">
+                    <p class="holder__content_name">Камень, ножницы, бумага</p>
+                    <p class="holder__content_text">Сыграй в популярную игру против компьютера.</p>
+                    <form>
+                        <button class="holder__button">Играть!</button>
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="holder__content_back">
+                <img src="img/game_6_big.png" alt="Game" class="holder__content_img">
+                <div class="holder__content_box" id="game_6">
+                    <p class="holder__content_name">Генератор случайных цветов</p>
+                    <p class="holder__content_text">Игра, в которой при клике на кнопку фон страницы меняется на
+                        случайный.</p>
+                    <form>
+                        <button class="holder__button">Играть!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer center">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
+
+    <script src="hw-2.js"></script>
+
+</body>
+
+</html>
