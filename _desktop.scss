@@ -161,7 +161,7 @@ body {
     &__content {
         background-color: #FFFFFF;
         border-radius: 30px;
-        width: 1200px;
+        max-width: 1200px;
         margin-bottom: 32px;
         display: flex;
         flex-direction: row-reverse;
@@ -169,7 +169,7 @@ body {
         &_back {
             background-color: #FFFFFF;
             border-radius: 30px;
-            width: 1200px;
+            max-width: 1200px;
             margin-bottom: 32px;
             display: flex;
             flex-direction: row;
@@ -177,7 +177,6 @@ body {
 
         &_img {
             width: 600px;
-            height: 500;
         }
 
 
