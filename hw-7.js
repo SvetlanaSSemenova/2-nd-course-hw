@@ -8,6 +8,7 @@ let upperStr = str.toUpperCase();
 // Вывод результата
 console.log(upperStr);
 
+
 // Задание 2
 
 function filterArrayByPrefix(arr, prefix) {
@@ -19,6 +20,7 @@ const prefix = 'ba';
 
 const result = filterArrayByPrefix(array, prefix);
 console.log(result);
+
 
 // Задание 3
 
@@ -40,6 +42,7 @@ function roundNumber(number) {
 
 roundNumber(32.58884);
 
+
 // Задание 4
 
 function findMinAndMax(numbers) {
@@ -56,6 +59,7 @@ const numbers = [52, 53, 49, 77, 21, 32];
 
 findMinAndMax(numbers);
 
+
 // Задание 5
 
 function getRandomNumber(min, max) {
@@ -65,6 +69,7 @@ function getRandomNumber(min, max) {
 }
 
 getRandomNumber(1, 10);
+
 
 // Задание 6
 
@@ -90,6 +95,7 @@ try {
     console.error(error.message);
 }
 
+
 // Задание 7
 
 function getRandomNumberBetween(min, max) {
@@ -111,16 +117,19 @@ function getRandomNumberBetween(min, max) {
 const randomNumber = getRandomNumberBetween(5, 15);
 console.log(randomNumber);
 
+
 // Задание 8
 
 const now = new Date();
 console.log(now);
+
 
 // Задание 9
 
 const currentDate = new Date();
 currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
+
 
 // Задание 10
 
