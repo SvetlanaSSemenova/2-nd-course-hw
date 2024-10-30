@@ -31,3 +31,4 @@ function quiz() {
 
     alert(`Правильных ответов: ${correctAnswersCount}/${quiz.length}`);
 }
+
