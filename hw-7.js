@@ -155,4 +155,4 @@ function formatDate(date) {
 }
 
 const today = new Date();
-console.log(formatDate(today));
+console.log(formatDate(today));  
