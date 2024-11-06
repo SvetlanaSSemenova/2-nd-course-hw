@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+<body>
+
+    <h1 class="title">Домашнее задание</h1>
+    <p class="description">Если скажет плохой дядя:</p>
+    <p class="description">- В browser-е не нужен DOM,</p>
+    <p class="description">Обращайся к санитарам -</p>
+    <p class="description">Пусть везут его в дурдом.</p>
+    <button class="btn-remove">Удалить текст</button>
+
+    <script>
+        const descriptionEl = document.querySelector('.description');
+        const btnRemoveEl = document.querySelector('.btn-remove');
+
+        btnRemoveEl.addEventListener('click', function (e) {
+            const textInfoEl = document.querySelector('.description');  //указание строки
+            textInfoEl.remove();            // удаление строки
+        });
+    </script>
+
+</body>
+
+</html>
