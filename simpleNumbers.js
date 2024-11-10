@@ -19,7 +19,7 @@ function simpleNumbers() {
     while (true) {
         // Генерация задачи
         const task = generateTask();
-        console.log(`Ваша задача: ${task}`);
+        alert(`Ваша задача: ${task}`);
 
         // Запрос ответа от пользователя
         const input = Number(prompt('Введите ваш ответ'));
@@ -27,9 +27,9 @@ function simpleNumbers() {
         // Проверка правильности ответа
         const correctAnswer = eval(task);
         if (input === correctAnswer) {
-            console.log('Ответ верный!');
+            alert('Ответ верный!');
         } else {
-            console.log('Ошибка! Правильный ответ: ', correctAnswer);
+            alert('Ошибка! Правильный ответ: ', correctAnswer);
         }
 
         // Вопрос о продолжении игры
@@ -39,6 +39,6 @@ function simpleNumbers() {
         }
     }
 
-    console.log('Игра окончена. Спасибо за участие!');
+    alert('Игра окончена. Спасибо за участие!');
 
 }
