@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title_info {
+            display: none;
+        }
+
+        </style>
+</head>
+
+<body>
+
+    <h1 class="title">Домашнее задание</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorum velit minima tempore placeat
+        blanditiis quam laudantium excepturi labore ab.</p>
+    <button class="btn">Скрыть</button>
+
+    <script>
+        const titleEl = document.querySelector('.title');
+        const btnEl = document.querySelector('.btn');
+
+        btnEl.addEventListener('click', function () {  //работа при нажатии на кнопку
+            titleEl.classList.toggle('title_info');   //remove - удаление  toggle - переключение  add - добавление
+        });
+
+    </script>
+
+</body>
+
+</html>
