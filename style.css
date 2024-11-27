@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .center {
@@ -44,7 +45,6 @@ body {
 }
 .header__button {
   background: #202027;
-  box-sizing: border-box;
   border-radius: 60px;
   width: 247px;
   height: 66px;
@@ -53,12 +53,61 @@ body {
   font-size: 24px;
   line-height: 34px;
   font-family: "Montserrat";
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .header__button:hover {
   background: #FFFFFF;
   color: #202027;
 }
 
+.container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #BCEC30;
+  color: #202027;
+  height: 90px;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  animation: marquee 10s linear infinite;
+}
+
+.line {
+  display: inline-flex;
+  align-items: center;
+}
+.line_game {
+  margin-right: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 27px;
+}
+.line_star {
+  width: 36px;
+  height: 36px;
+  margin-right: 50px;
+  margin-top: 27px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
 .box {
   position: relative;
   background-color: #202027;
@@ -87,7 +136,7 @@ body {
   gap: 32px;
   padding-top: 72px;
 }
-.box__game_container {
+.box__game_big {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -102,24 +151,32 @@ body {
 }
 .box__content:hover {
   transform: scale(1.09);
+  transition: transform 0.3s ease-in-out;
 }
-.box__content_img {
+.box__content-img {
   border-radius: 30px;
 }
-.box__content_name {
+.box__content-name {
+  background: #F7F7F7;
+  box-sizing: border-box;
+  border-radius: 58px;
+  width: 108px;
+  height: 36px;
+  margin-left: 32px;
+  margin-top: 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 17px;
   color: #202027;
-  padding-top: 40px;
-  padding-left: 48px;
+  padding-top: 8px;
+  padding-left: 16px;
 }
-.box__content_text {
+.box__content-text {
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
   color: #202027;
-  padding-top: 28px;
+  padding-top: 16px;
   padding-left: 32px;
   padding-right: 40px;
   padding-bottom: 36px;
@@ -180,7 +237,6 @@ body {
 }
 .holder__button {
   background: #202027;
-  box-sizing: border-box;
   border-radius: 60px;
   width: 247px;
   height: 66px;
@@ -190,6 +246,7 @@ body {
   font-size: 24px;
   line-height: 34px;
   font-family: "Montserrat";
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .holder__button:hover {
   background: #FFFFFF;
@@ -235,14 +292,14 @@ body {
   .box__content {
     width: 280px;
   }
-  .box__content_img {
+  .box__content-img {
     width: 280px;
   }
-  .box__content_name {
+  .box__content-name {
     padding-top: 32px;
     padding-left: 32px;
   }
-  .box__content_text {
+  .box__content-text {
     font-size: 24px;
     line-height: 30px;
     padding-top: 20px;

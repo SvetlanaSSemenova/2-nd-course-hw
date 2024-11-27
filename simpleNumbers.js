@@ -29,7 +29,7 @@ function simpleNumbers() {
         if (input === correctAnswer) {
             alert('Ответ верный!');
         } else {
-            alert('Ошибка! Правильный ответ: ', correctAnswer);
+            alert(`Ошибка! Правильный ответ: ${correctAnswer}`);
         }
 
         // Вопрос о продолжении игры

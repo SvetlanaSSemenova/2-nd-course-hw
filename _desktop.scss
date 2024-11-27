@@ -5,6 +5,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .center {
@@ -50,7 +51,6 @@ body {
 
     &__button {
         background: #202027;
-        box-sizing: border-box;
         border-radius: 60px;
         width: 247px;
         height: 66px;
@@ -59,11 +59,63 @@ body {
         font-size: 24px;
         line-height: 34px;
         font-family: "Montserrat";
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
         &:hover {
             background: #FFFFFF;
             color: #202027;
         }
+    }
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #BCEC30;
+    color: #202027;
+    height: 90px;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    animation: marquee 10s linear infinite;
+}
+
+.line {
+    display: inline-flex;
+    align-items: center;
+
+    &_game {
+        margin-right: 50px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-top: 27px;
+    }
+
+    &_star {
+        width: 36px;
+        height: 36px;
+        margin-right: 50px;
+        margin-top: 27px;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(-150%);
     }
 }
 
@@ -97,7 +149,7 @@ body {
         gap: 32px;
         padding-top: 72px;
 
-        &_container {
+        &_big {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -114,31 +166,41 @@ body {
 
         &:hover {
             transform: scale(1.09);
+            transition: transform 0.3s ease-in-out;
         }
 
-        &_img {
-            border-radius: 30px;
-        }
+    
+    }
 
-        &_name {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 17px;
-            color: #202027;
-            padding-top: 40px;
-            padding-left: 48px;
-        }
+    &__content-img {
+        border-radius: 30px;
+    }
 
-        &_text {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 39px;
-            color: #202027;
-            padding-top: 28px;
-            padding-left: 32px;
-            padding-right: 40px;
-            padding-bottom: 36px;
-        }
+    &__content-name {
+        background: #F7F7F7;
+        box-sizing: border-box;
+        border-radius: 58px;
+        width: 108px;
+        height: 36px;
+        margin-left: 32px;
+        margin-top: 32px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+        color: #202027;
+        padding-top: 8px;
+        padding-left: 16px;
+    }
+
+    &__content-text {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #202027;
+        padding-top: 16px;
+        padding-left: 32px;
+        padding-right: 40px;
+        padding-bottom: 36px;
     }
 }
 
@@ -204,7 +266,6 @@ body {
 
     &__button {
         background: #202027;
-        box-sizing: border-box;
         border-radius: 60px;
         width: 247px;
         height: 66px;
@@ -214,17 +275,16 @@ body {
         font-size: 24px;
         line-height: 34px;
         font-family: "Montserrat";
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
         &:hover {
             background: #FFFFFF;
             color: #202027;
+
         }
     }
 
 }
-
-
-
 
 .footer {
     height: 150px;
