@@ -1,3 +1,6 @@
+<!-- Changes -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,62 +25,83 @@
 
         <div class="header__desc">
             <h2 class="header__mob">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
-                class="header__mob_big">«Поехали!»</span> и <span class="header__mob_big">приступай</span>.</h2>
+                    class="header__mob_big">«Поехали!»</span> и <span class="header__mob_big">приступай</span>.</h2>
         </div>
-      
+
         <div class="header__but">
             <form action="#About_game">
-                <button class="header__button">Поехали!</button>
+                <button id="goButton" class="header__button">Поехали!</button>
             </form>
         </div>
     </header>
 
+    <div class="container">
+        <div class="marquee">
+            <div class="line">
+                <h2 class="line_game">ВИКТОРИНА</h2>
+                <img src="img/Star@2x.png" alt="star" class="line_star">
+                <h2 class="line_game">УГАДАЙ ЧИСЛО</h2>
+                <img src="img/Star@2x.png" alt="star" class="line_star">
+                <h2 class="line_game">ПЕРЕВЕРНИ ТЕКСТ</h2>
+                <img src="img/Star@2x.png" alt="star" class="line_star">
+                <h2 class="line_game">ПРОСТАЯ АРИФМЕТИКА</h2>
+                <img src="img/Star@2x.png" alt="star" class="line_star">
+                <h2 class="line_game">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</h2>
+                <img src="img/Star@2x.png" alt="star" class="line_star">
+                <h2 class="line_game">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</h2>
+                <img src="img/Star@2x.png" alt="star" class="line_star">
+            </div>
+
+        </div>
+    </div>
+
     <section class="box center">
         <h2 class="box__title" id="About_game">Об играх</h2>
-        <p class="box__text">В моей коллекции представлено 6 игр на разные темы.</p>
-        <p class="box__text">Игры несложные — в них может поиграть каждый.</p>
-        <p class="box__text">Все игры доступны для пользования.</p>
+        <p class="box__text">В моей коллекции представлено 6 игр на разные темы. <br>
+            Игры несложные — в них может поиграть каждый. <br>
+            Все игры доступны для пользования.</p>
+
         <div class="box__game">
-            <div class="box__game_container">
+            <div class="box__game_big">
 
-                <a href="#game_1" class="box__content">
-                    <img src="img/game_1.png" alt="Game" class="Box__content_img">
-                    <p class="box__content_name">Игра №1</p>
-                    <p class="box__content_text">Угадай число</p>
+                <a href="#game_1" class="box__content js-scroll-to">
+                    <img src="img/game_1.png" alt="Game" class="box__content-img">
+                    <p class="box__content-name">Игра №1</p>
+                    <p class="box__content-text">Угадай число</p>
                 </a>
 
-                <a href="#game_5" class="box__content">
-                    <img src="img/game_4.png" alt="Game" class="Box__content_img">
-                    <p class="box__content_name">Игра №4</p>
-                    <p class="box__content_text">Камень, ножницы, бумага</p>
-                </a>
-            </div>
-
-            <div class="box__game_container">
-                <a href="#game_2" class="box__content">
-                    <img src="img/game_2.png" alt="Game" class="Box__content_img">
-                    <p class="box__content_name">Игра №2</p>
-                    <p class="box__content_text">Простая арифметика</p>
-                </a>
-
-                <a href="#game_4" class="box__content">
-                    <img src="img/game_5.png" alt="Game" class="Box__content_img">
-                    <p class="box__content_name">Игра №5</p>
-                    <p class="box__content_text">Простая викторина</p>
+                <a href="#game_5" class="box__content js-scroll-to">
+                    <img src="img/game_4.png" alt="Game" class="box__content-img">
+                    <p class="box__content-name">Игра №4</p>
+                    <p class="box__content-text">Камень, ножницы, бумага</p>
                 </a>
             </div>
 
-            <div class="box__game_container">
-                <a href="#game_3" class="box__content">
-                    <img src="img/game_3.png" alt="Game" class="Box__content_img">
-                    <p class="box__content_name">Игра №3</p>
-                    <p class="box__content_text">Переверни тескт</p>
+            <div class="box__game_big">
+                <a href="#game_2" class="box__content js-scroll-to">
+                    <img src="img/game_2.png" alt="Game" class="box__content-img">
+                    <p class="box__content-name">Игра №2</p>
+                    <p class="box__content-text">Простая арифметика</p>
                 </a>
 
-                <a href="#game_6" class="box__content">
-                    <img src="img/game_6.png" alt="Game" class="Box__content_img">
-                    <p class="box__content_name">Игра №6</p>
-                    <p class="box__content_text">Генертор случайных цветов</p>
+                <a href="#game_4" class="box__content js-scroll-to">
+                    <img src="img/game_5.png" alt="Game" class="box__content-img">
+                    <p class="box__content-name">Игра №5</p>
+                    <p class="box__content-text">Простая викторина</p>
+                </a>
+            </div>
+
+            <div class="box__game_big">
+                <a href="#game_3" class="box__content js-scroll-to">
+                    <img src="img/game_3.png" alt="Game" class="box__content-img">
+                    <p class="box__content-name">Игра №3</p>
+                    <p class="box__content-text">Переверни текст</p>
+                </a>
+
+                <a href="#game_6" class="box__content js-scroll-to">
+                    <img src="img/game_6.png" alt="Game" class="box__content-img">
+                    <p class="box__content-name">Игра №6</p>
+                    <p class="box__content-text">Генертор случайных цветов</p>
                 </a>
             </div>
         </div>
@@ -93,7 +117,8 @@
                     <p class="holder__content_name">Угадай число</p>
                     <p class="holder__content_text">Попробуй угадать случайное число от 1 до 100.</p>
                     <form class="holder__btn">
-                        <button class="holder__button">Играть!</button>
+                        <button id="start-btn" onclick="startGame()" class="holder__button">Играть!</button>
+                        <div id="result"></div>
                     </form>
                 </div>
             </div>
@@ -104,7 +129,7 @@
                     <p class="holder__content_name">Простая арифметика</p>
                     <p class="holder__content_text">Попробуй решить простые арифметические задачи.</p>
                     <form>
-                        <button class="holder__button">Играть!</button>
+                        <button onclick="simpleNumbers()" class="holder__button">Играть!</button>
                     </form>
                 </div>
             </div>
@@ -115,7 +140,7 @@
                     <p class="holder__content_name">Переверни текст</p>
                     <p class="holder__content_text">Попробуй ввести текст, который будет перевернут.</p>
                     <form>
-                        <button class="holder__button">Играть!</button>
+                        <button onclick="inputText()" class="holder__button">Играть!</button>
                     </form>
                 </div>
             </div>
@@ -126,7 +151,7 @@
                     <p class="holder__content_name">Викторина</p>
                     <p class="holder__content_text">Отвечай на вопросы викторины с вариантами ответов.</p>
                     <form>
-                        <button class="holder__button">Играть!</button>
+                        <button onclick="quiz()" class="holder__button">Играть!</button>
                     </form>
                 </div>
             </div>
@@ -137,20 +162,20 @@
                     <p class="holder__content_name">Камень, ножницы, бумага</p>
                     <p class="holder__content_text">Сыграй в популярную игру против компьютера.</p>
                     <form>
-                        <button class="holder__button">Играть!</button>
+                        <button onclick="rockScissorsPaper()" class="holder__button">Играть!</button>
                     </form>
                 </div>
             </div>
 
-            
-            <div class="holder__content_back">
+
+            <div class="holder__content_back" id="randomColor">
                 <img src="img/game_6_big.png" alt="Game" class="holder__content_img">
                 <div class="holder__content_box" id="game_6">
                     <p class="holder__content_name">Генератор случайных цветов</p>
                     <p class="holder__content_text">Игра, в которой при клике на кнопку фон страницы меняется на
                         случайный.</p>
                     <form>
-                        <button class="holder__button">Играть!</button>
+                        <button onclick="generateRandomColor()" class="holder__button">Играть!</button>
                     </form>
                 </div>
             </div>
@@ -162,7 +187,47 @@
         <p class="footer__text">Все права защищены.</p>
     </footer>
 
-    <script src="hw-2.js"></script>
+    <script src="checkNumber.js"></script>
+    <script src="simpleNumbers.js"></script>
+    <script src="inputText.js"></script>
+    <script src="quiz.js"></script>
+    <script src="rockScissorsPaper.js"></script>
+    <script src="generateRandomColor.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const goButton = document.getElementById('goButton');
+
+            if (goButton) {
+                goButton.addEventListener('click', function (event) {
+                    event.preventDefault(); 
+                    const aboutGameSection = document.querySelector('#About_game'); 
+
+                    if (aboutGameSection) {
+                        aboutGameSection.scrollIntoView({ behavior: 'smooth' }); 
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollLinks = document.querySelectorAll('.js-scroll-to');
+
+            scrollLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const target = this.getAttribute('href'); 
+                    const sectionToScroll = document.querySelector(target);
+
+                    if (sectionToScroll) {
+                        sectionToScroll.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 

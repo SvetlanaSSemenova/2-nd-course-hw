@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1 class="title">Домашнее задание</h1>
+    <h2 class="description">Если скажет плохой дядя:</h2>
+    <p class="description">- В browser-е не нужен DOM,</p>
+    <h3 class="description">Обращайся к санитарам -</h3>
+    <p class="description">Пусть везут его в дурдом.</p>
+
+    <script>
+   let elements = document.querySelectorAll('.description'); // Находим все элементы с классом 'description'
+       
+        elements.forEach(element => {   // Перебираем каждый элемент и меняем его текст
+            element.textContent = 'Измененный текст';
+        });
+    </script>
+
+</body>
+
+</html>

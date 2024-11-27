@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorum velit minima tempore placeat
+        blanditiis quam laudantium excepturi labore ab.</p>
+    <button class="btn">Клик</button>
+
+    <script>
+        const textEl = document.querySelector('.text');
+        const btnEl = document.querySelector('.btn');
+
+        btnEl.addEventListener('click', function () {  //работа при нажатии на кнопку
+            textEl.style.color = 'blue'                //изменение цвета текста после клика
+        });
+
+    </script>
+
+</body>
+
+</html>
